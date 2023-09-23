@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Telegraph</title>
+    <link rel="telegraph icon"href="images/triangle.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-apple">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag">
+                        </a>
+                    </li>
+                </ul>
+                <!-- nav list and nav list mobile  -->
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-apple">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order.html" class="nav-link">Order here
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="feedback.html" class="nav-link">Feedback
+                        </a>
+                    </li>
+
+                    <input type="text" id="searchbar" name="searchbar" placeholder="Search"/><li class="nav-item">
+                        <a href="#" class="nav-link nav-link-search">
+                        </a>
+                    </li>
+                    
+                </ul>
+                <!-- nav list nav list larger  -->
+            </nav>
+        </div>
+    </header>
+    <div class="border">
+        <h1>Telegraph Order Form</h1>
+        <form id="order-form" onclick="validateForm()" class="order" method="get">
+            <fieldset class="fieldset">
+                <legend><strong><colo>Personal Information</strong></legend>
+                    <img style="float: right; height:500px; width: 550px; padding-top: 20px;" src="images/Telegraph2.jpeg"></img>
+                <label for="vintel"><strong>Type of Telegraph </strong></label>
+                <input type="text" id="vintel" name="vintel" placeholder="Pirate Telegaph" disabled="disabled"/>
+                <label>
+                    <span class="required"><strong>No. of Telegraphs</strong></span>
+                    <select name="selection">
+                        <option value="select">-- Select --</option>
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                </label>
+                
+                <label for="First Name" ><strong>First Name</strong></label>
+                <input type="text" id="FirstName" name="First Name" style="margin-bottom: 20px;" required/>
+                
+                <label for="Last Name"><strong>Last Name</strong></label>
+                <input type="text" id="LastName" name="Last Name" required/>
+                
+                <label for="mailAddress"><strong>Email Address</strong><label>
+                <input class="email2" type="mail" id="mailAddress" name="mailAddress" required /></br>
+                
+                <label for="Mobile Number"><strong>Mobile Number</strong></label>
+                <input type="tel" id="phone" name="Mobile Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+
+                <label>
+                    
+                    <span class="required">Country </span>
+                    
+                    <select name="selection">
+                      <option value="select">--Select a country--</option>
+                      <option value="CAN">Canada</option>
+                      <option value="USA">United States Of America</option>
+                      <option value="IND">India</option>
+                      <option value="RUS">Russia</option>
+                      <option value="ASM">American Samoa</option>
+                      <option value="NZ">New Zealand</option>
+                      <option value="ENG">England</option>
+                      <option value="CHN">China</option>
+                      <option value="FRA">France</option>
+                      <option value="ICE">Iceland</option>
+                      <option value="ARG">Argentina</option>
+                      <option value="CHI">Chile</option>
+                      <option value="SRI">Sri Lanka</option>
+
+                    </select>
+
+                <label for="state"><strong>State</strong><label>
+                    <input class="state" type="state" id="state" name="state" required /></br>
+
+                    <label for="city"><strong>City</strong><label>
+                        <input class="city" type="city" id="city" name="city" required /></br>
+                
+                <label for="Address"><strong>Address</strong></label>
+                <input type="radio" id="TypeOfAddress" name="Home" value="Home" checked required/>
+                <label for="TypeOfAddress"><strong>Home</strong></label>
+                <input type="radio" id="TypeOfAddress" name="Work" value="Work" checked required/>
+                <label for="TypeOfAddress"><strong>Work</strong></label>
+                <input type="text"id="add" name="add" value="" checked required/>
+            </fieldset>
+            
+            <fieldset>
+                <legend><strong>Method Of Payment</strong></legend>
+                <input type="radio" id="Payment" name="Debit Card" value="Debit Card" required/>
+                <label for="Payment"><strong>Debit Card</strong></label>
+                <input type="radio" id="Payment" name="Credit Card" value="Credit Card" required/>
+                <label for="Payment"><strong>Credit Card</strong></label></br>
+                
+                <label for="Payment"><strong>Enter your Card Number</strong></label>
+                <input type="tel" id="Payment1" name="Card Number"  required/>
+            </fieldset>
+            <fieldset>
+                <legend>Offers of the Week</legend>
+                <label for="DISCOUNT10"><strong>DISCOUNT10</strong>: Get 10 percent discount on a minimum purchase of 10 Telegraphs</label></br>
+                <label for="SUNDAYFUNDAY"><strong>SUNDAYFUNDAY</strong> : Get 2 Telegraphs free Telegraphs free on a minimum purchase of 20 on sunday.</label></br>
+                <label for="Write your Coupon Code"><strong>Write your coupon Code</strong></label>
+                <input type="text" id="coupon" name="coupon"/>
+            </fieldset>
+            
+            <button  action="submission.html"  class="buttonform1" type="submit">Submit</button>
+            
+            <button class="buttonform2" type="reset">Reset</button>
+            <div class="bar1"></div>
+        </form>
+        
+        
+        </div>
+        </div>
+    </main>
+    <footer class="orderFooter">
+        <center>
+            <h3 class="h3">To subscribe to our site</h3>
+            <form class="formrate" id="subscriptionForm">
+                <label for="emailAddress">Email</label>
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="abcd@gmail.com" required />
+                <button class="button_sub" role="button" id="subscribeButton">Subscribe</button>
+            </form>
+        </center>
+        <center>
+         <figure>
+            
+            <figcaption>References: <cite>
+                <a class="references" href="https://www.britannica.com/technology/telegraph">The Telegraph</a>
+            </cite></figcaption>
+        
+            <div >
+             <p class="pra" ><small>© The red eye corporation</small></p>
+            </div>
+        
+        <p class="pr1"><small><em>All rights reserved.</em></small></p>
+    </center>  
+         </figure>
+        
+    
+</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

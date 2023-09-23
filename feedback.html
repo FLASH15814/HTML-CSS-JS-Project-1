@@ -1,0 +1,572 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Page title and favicon -->
+    <title>Telegraph</title>
+    <link rel="telegraph icon"href="images/triangle.png">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="every">
+  <header>
+    <div class="container">
+      <!-- Navigation Bar -->
+        <nav class="nav">
+          <!-- List of navigation items -->
+            <ul class="nav-list nav-list-mobile">
+                <li class="nav-item">
+                    <div class="mobile-menu">
+                        <span class="line line-top"></span>
+                        <span class="line line-bottom"></span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link nav-link-apple">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-bag">
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="nav-list nav-list-larger">
+                <li class="nav-item nav-item-hidden">
+                    <a href="index.html" class="nav-link nav-link-apple">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="order.html" class="nav-link">Order here
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Feedback
+                    </a>
+                </li>
+
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search"/><li class="nav-item"> <a href="#" class="nav-link nav-link-search"></a>
+                </li>
+                
+            </ul>
+            <!-- End of List of navigation items -->
+        </nav>
+        <!-- End of Navigation Bar -->
+    </div>
+</header>
+
+
+<form class="feedback">
+  <!-- Feedback heading -->
+  <h1 id="matter">Your feedback matters!!!</h1>
+  <!-- Name input field -->
+  <label class="name" for="name">Name :</label>
+  <input type="text" name="name1" id="name1"/>
+  <!-- Order ID input field -->
+  <label class="orderid" for="orderid">Order ID : </label>
+  <input type="tel" name="orderid" id="orderid" />
+  <!-- Rating scale heading -->
+  <h2 id="ratefeed">1=very satisfied 2=somewhat satisfied 3=neutral 4=somewhat dissatisfied 5=very dissatisfied</h2>
+  
+
+  <table>
+    <thead>
+    
+        <!--  Product Satisfaction  -->
+        <th> <section class="row">
+          <div class="col-md-12">
+            <h3><u>PRODUCT SATISFACTION</u></h3>
+            <p></p>
+          </div>
+        </section></th>
+
+        
+  <!--  Question 1 -->
+
+  <section class="row">
+    <tbody>
+        <tr>
+            <!-- Question about customer service quality -->
+            <th>While thinking about your most recent experience with The Red Eye corporation, how was the quality of customer service you received?</th>
+            <!-- Radio buttons for rating -->
+            <td><label for="question1a">1</label><input id="question1a" name="question1" type="radio"></td>
+            <td><label for="question1b">2</label><input id="question1b" name="question1" type="radio"></td>
+            <td><label for="question1c">3</label><input id="question1c" name="question1" type="radio"></td>
+            <td><label for="question1d">4</label><input id="question1d" name="question1" type="radio"></td>
+            <td><label for="question1e">5</label><input id="question1e" name="question1" type="radio"></td>
+        </tr>
+    </tbody>
+</section>
+
+  
+
+
+  <!-- Question 2 -->
+<tbody>
+  <tr> <!-- This starts a row -->
+    <!-- Question about the process for getting concerns resolved -->
+    <th>The process for getting your concerns resolved was:</th> <!-- Table header-->
+    
+    <!-- Radio buttons for rating the process -->
+    <td> <!-- Table data-->
+      <label for="question2a">1</label>
+      <input id="question2a" name="question2" type="radio">
+    </td>
+    <td>
+      <label for="question2b">2</label>
+      <input id="question2b" name="question2" type="radio">
+    </td>
+    <td>
+      <label for="question2c">3</label>
+      <input id="question2c" name="question2" type="radio">
+    </td>
+    <td>
+      <label for="question2d">4</label>
+      <input id="question2d" name="question2" type="radio">
+    </td>
+    <td>
+      <label for="question2e">5</label>
+      <input id="question2e" name="question2" type="radio">
+    </td>
+  </tr> <!-- This closes the row -->
+</tbody>
+
+
+  
+  
+   <!--  Question 3  -->
+   <tbody>
+    <!-- Row for the question about satisfaction with the telegraph features -->
+    <tr>
+      <th>Now please think about the features of the telegraph itself. How satisfied are you with the telegraph:</th>
+      
+      <!-- Radio buttons for rating satisfaction -->
+      <td>
+        <label for="question3a">1</label>
+        <input id="question3a" name="question3" type="radio">
+      </td>
+      <td>
+        <label for="question3b">2</label>
+        <input id="question3b" name="question3" type="radio">
+      </td>
+      <td>
+        <label for="question3c">3</label>
+        <input id="question3c" name="question3" type="radio">
+      </td>
+      <td>
+        <label for="question3d">4</label>
+        <input id="question3d" name="question3" type="radio">
+      </td>
+      <td>
+        <label for="question3e">5</label>
+        <input id="question3e" name="question3" type="radio">
+      </td>
+    </tr>
+  </tbody>
+  
+  
+  <!-- Question 4 -->
+<tbody>
+  <!-- Row for the question about likelihood of recommendation -->
+  <tr>
+    <th>How likely is that you would recommend this company to a friend or colleague?</th>
+    
+    <!-- Radio buttons for rating likelihood of recommendation -->
+    <td>
+      <label for="question4a">1</label>
+      <input id="question4a" name="question4" type="radio">
+    </td>
+    <td>
+      <label for="question4b">2</label>
+      <input id="question4b" name="question4" type="radio">
+    </td>
+    <td>
+      <label for="question4c">3</label>
+      <input id="question4c" name="question4" type="radio">
+    </td>
+    <td>
+      <label for="question4d">4</label>
+      <input id="question4d" name="question4" type="radio">
+    </td>
+    <td>
+      <label for="question4e">5</label>
+      <input id="question4e" name="question4" type="radio">
+    </td>
+  </tr>
+</tbody>
+
+  
+
+  <!--  Customer service  -->
+  <th> <!-- Table header cell for a section -->
+    <section class="row">
+      <!-- Row section with columns -->
+      <div class="col-md-12">
+        <!-- Column with a heading -->
+        <h3><u>CUSTOMER SERVICE</u></h3>
+      </div>
+    </section>
+  </th>
+  
+
+  <!--  Question 5  -->
+  <tbody>
+    <!-- Row for the question about courtesy of customer service representative -->
+    <tr>
+      <th>The customer service representative was very courteous</th>
+      
+      <!-- Radio buttons for rating the courtesy of the representative -->
+      <td>
+        <label for="question5a">1</label>
+        <input id="question5a" name="question5" type="radio">
+      </td>
+      <td>
+        <label for="question5b">2</label>
+        <input id="question5b" name="question5" type="radio">
+      </td>
+      <td>
+        <label for="question5c">3</label>
+        <input id="question5c" name="question5" type="radio">
+      </td>
+      <td>
+        <label for="question5d">4</label>
+        <input id="question5d" name="question5" type="radio">
+      </td>
+      <td>
+        <label for="question5e">5</label>
+        <input id="question5e" name="question5" type="radio">
+      </td>
+    </tr>
+  </tbody>
+  
+  
+
+
+  <!--  Question 6  -->
+  <tbody>
+    <!-- Row for the question about knowledge of customer service representative -->
+    <tr>
+      <th>The customer service representative was very knowledgeable</th>
+      
+      <!-- Radio buttons for rating the knowledge of the representative -->
+      <td>
+        <label for="question6a">1</label>
+        <input id="question6a" name="question6" type="radio">
+      </td>
+      <td>
+        <label for="question6b">2</label>
+        <input id="question6b" name="question6" type="radio">
+      </td>
+      <td>
+        <label for="question6c">3</label>
+        <input id="question6c" name="question6" type="radio">
+      </td>
+      <td>
+        <label for="question6d">4</label>
+        <input id="question6d" name="question6" type="radio">
+      </td>
+      <td>
+        <label for="question6e">5</label>
+        <input id="question6e" name="question6" type="radio">
+      </td>
+    </tr>
+  </tbody>
+  
+  
+
+   <!--  Question 7  -->
+   <tbody>
+    <!-- Row for the question about handling the call quickly by the customer service representative -->
+    <tr>
+      <th>The customer service representative handled my call quickly</th>
+      
+      <!-- Radio buttons for rating the speed of call handling -->
+      <td>
+        <label for="question7a">1</label>
+        <input id="question7a" name="question7" type="radio">
+      </td>
+      <td>
+        <label for="question7b">2</label>
+        <input id="question7b" name="question7" type="radio">
+      </td>
+      <td>
+        <label for="question7c">3</label>
+        <input id="question7c" name="question7" type="radio">
+      </td>
+      <td>
+        <label for="question7d">4</label>
+        <input id="question7d" name="question7" type="radio">
+      </td>
+      <td>
+        <label for="question7e">5</label>
+        <input id="question7e" name="question7" type="radio">
+      </td>
+    </tr>
+  </tbody>
+  
+  
+  
+
+   <!--  Question 8  -->
+   <tbody>
+    <!-- Row for the question about meeting product expectations -->
+    <tr>
+      <th>How well did our product meet your expectations?</th>
+      
+      <!-- Radio buttons for rating how well the product met expectations -->
+      <td>
+        <label for="question8a">1</label>
+        <input id="question8a" name="question8" type="radio">
+      </td>
+      <td>
+        <label for="question8b">2</label>
+        <input id="question8b" name="question8" type="radio">
+      </td>
+      <td>
+        <label for="question8c">3</label>
+        <input id="question8c" name="question8" type="radio">
+      </td>
+      <td>
+        <label for="question8d">4</label>
+        <input id="question8d" name="question8" type="radio">
+      </td>
+      <td>
+        <label for="question8e">5</label>
+        <input id="question8e" name="question8" type="radio">
+      </td>
+    </tr>
+  </tbody>
+  
+  
+
+  <!-- Question 9 -->
+  <tbody>
+    <!-- Row for the question about likelihood to purchase products again -->
+    <tr>
+      <th>How likely are you to purchase any of our products again?</th>
+      
+      <!-- Radio buttons for rating likelihood to purchase again -->
+      <td>
+        <label for="question9a">1</label>
+        <input id="question9a" name="question9" type="radio">
+      </td>
+      <td>
+        <label for="question9b">2</label>
+        <input id="question9b" name="question9" type="radio">
+      </td>
+      <td>
+        <label for="question9c">3</label>
+        <input id="question9c" name="question9" type="radio">
+      </td>
+      <td>
+        <label for="question9d">4</label>
+        <input id="question9d" name="question9" type="radio">
+      </td>
+      <td>
+        <label for="question9e">5</label>
+        <input id="question9e" name="question9" type="radio">
+      </td>
+    </tr>
+  </tbody>
+  
+  
+
+  <table>
+    <th>
+      <!-- Table header cell containing a section -->
+      <section class="row">
+        <!-- Row section with columns -->
+        <div class="col-md-12">
+          <!-- Column with a heading -->
+          <h3><u>OVERALL SATISFACTION</u></h3>
+          <p></p> <!-- Placeholder for additional content -->
+        </div>
+      </section>
+    </th>
+  </table>
+  
+
+
+<!--  Overall satisfaction  -->
+
+  <!-- Question 10 -->
+  <section class="row">
+    <!-- Outer row section -->
+    <div class="col-md-12">
+      <!-- Outer column with a nested row section -->
+      <section class="row">
+        <!-- Nested row section -->
+        <div class="col-md-8">
+          <!-- Nested column with a question -->
+          <p>How would you rate your overall experience regarding the product and customer service received?</p>
+        </div>
+        <div class="col-md-4">
+          <!-- Nested column with a dropdown select input -->
+          <select class="form-control" id="pregunta13">
+            <option value="5">Extremely satisfied</option>
+            <option value="4">Very satisfied</option>
+            <option value="3">Somewhat satisfied</option>
+            <option value="2">Not so satisfied</option>
+            <option value="1">Not at all satisfied</option>
+          </select>
+        </div>
+      </section>
+    </div>
+  </section>
+  <br />
+  
+
+
+  <!-- Question 11 -->
+  <section class="row">
+    <!-- Outer row section -->
+    <div class="col-md-12">
+      <!-- Outer column with a nested row section -->
+      <section class="row">
+        <!-- Nested row section -->
+        <div class="col-md-8">
+          <!-- Nested column with a question -->
+          <p>How likely is it that you would recommend this company to a friend or colleague?</p>
+        </div>
+        <div class="col-md-4">
+          <!-- Nested column with a dropdown select input -->
+          <select class="form-control" id="pregunta14">
+            <option value="4">Extremely likely</option>
+            <option value="3">Very likely</option>
+            <option value="2">Not likely</option>
+            <option value="1">Not at all likely</option>
+          </select>
+        </div>
+      </section>
+    </div>
+  </section>
+  
+<br />  <!-- Add a line break-->
+<hr/>   <!-- add a horizontal line-->
+
+
+
+  <!-- Additional comments -->
+  <label for="comments" id="comments">Additional Comments:</label><br>
+<!-- Textarea input for additional comments -->
+<textarea name="comments" rows="4" cols="50" placeholder="Add Your Feedback."></textarea><br><br>
+
+
+ <!-- Label for the email input -->
+<label class="emailfeed" for="email">Email:</label>
+<!-- Email input field -->
+<input type="email" id="emailfeedback" name="email" required>
+
+  <!-- Reset button to clear the form -->
+<input class="buttonform3" type="reset" value="Clear">
+<!-- Submit button to submit the form and redirect to a submission page -->
+<input class="buttonform4" onclick="window.location.href='submission.html'" type="submit" value="Submit">
+
+</form>
+
+    
+</fieldset>
+
+     <main>
+      <ul class="review">
+        <li class="person">
+            <!-- Image of the person -->
+            <img class="person1" src="Images/person1.jpg" alt="Person1" width="100px" height="100px">
+            <!-- Name of the person -->
+            <p class="stars">Andrew Jack</p>
+            <!-- Review/comment from the person -->
+            <p class="Comment-Review">This product is awesome. I bought it a few weeks ago, I used it during my school project and found it very helpful.</p>
+            <!-- Star rating images -->
+            <img src="Images/star3.png" height="25" width="25" />
+            <img src="Images/star3.png" height="25" width="25" />
+            <img src="Images/star3.png" height="25" width="25" />
+            <img src="Images/star3.png" height="25" width="25" />
+            <img src="Images/star3.png" height="25" width="25" />
+        </li>
+        <li class="person">
+          <!-- Image of the second person -->
+          <img class="person1" src="Images/person2.jpg" alt="Person2" width="100px" height="100px">
+          <!-- Name of the second person -->
+          <p class="stars">Mr. William Worth</p>
+          <!-- Review/comment from the second person -->
+          <p class="Comment-Review">I bought a product from this site two months ago and it is working well. The condition of the product was great.</p>
+          <!-- Star rating images for the second person -->
+          <img src="Images/star3.png" height="25" width="25" />
+          <img src="Images/star3.png" height="25" width="25" />
+          <img src="Images/star3.png" height="25" width="25" />
+          <img src="Images/star3.png" height="25" width="25" />
+          <img src="Images/star3.png" height="25" width="25" />
+      </li>
+      
+      <li class="person">
+        <!-- Image of the third person -->
+        <img class="person1" src="Images/person3.jpg!d" alt="Person3" width="100px" height="100px">
+        <!-- Name of the third person -->
+        <p class="stars">Mardona Quino</p>
+        <!-- Review/comment from the third person -->
+        <p class="Comment-Review">As a college professor, this product is very useful and is helping my students to learn more about the telegraph.</p>
+        <!-- Star rating images for the third person -->
+        <img src="Images/star3.png" height="25" width="25" />
+        <img src="Images/star3.png" height="25" width="25" />
+        <img src="Images/star3.png" height="25" width="25" />
+        <img src="Images/star3.png" height="25" width="25" />
+        <img src="Images/star3.png" height="25" width="25" />
+    </li>
+    
+    </ul>
+</main>
+
+    <footer>    
+      <center>
+        <!-- Centered heading for subscribing to the site -->
+        <h3 class="h3">To subscribe to our site</h3>
+        
+        <!-- Form for subscribing with email -->
+        <form class="formrate" id="subscriptionForm">
+            <!-- Label for email input -->
+            <label for="emailAddress">Email</label>
+            <!-- Email input field -->
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="abcd@gmail.com" required />
+            <!-- Button to submit subscription -->
+            <button class="button_sub" role="button" id="subscribeButton">Subscribe</button>
+        </form>
+    </center>
+    
+    <center>
+      <!-- Centered figure for references and copyright information -->
+      <figure>
+          
+          <!-- Caption for references -->
+          <figcaption>References: <cite>
+              <!-- Link to a reference source -->
+              <a class="references" href="https://www.britannica.com/technology/telegraph">The Telegraph</a>
+          </cite></figcaption>
+      
+          <!-- Division for additional information -->
+          <div>
+              <!-- Small paragraph with copyright and corporation name -->
+              <p class="pra"><small>© The Red Eye Corporation</small></p>
+          </div>
+      
+          <!-- Small paragraph for copyright notice -->
+          <p class="pr1"><small><em>All rights reserved.</em></small></p>
+      </figure>
+  </center>
+        
+</footer>
+<!-- Include the main JavaScript file -->
+<script src="main.js"></script>
+<!-- End of the HTML body -->
+</body>
+<!-- End of the HTML document -->
+</html>
